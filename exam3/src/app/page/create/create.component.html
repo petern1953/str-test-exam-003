@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <form #cForm="ngForm" (ngSubmit)="onCreate(customer)">
+        <div class="form-group">
+          <label>Name</label>
+          <input required [(ngModel)]="customer.name" name="name" type="text" class="form-control">
+          <div [hidden]="cForm.controls.name?.valid || cForm.controls.name?.pristine " class="error-message">
+            Name is required.
+          </div>
+        </div>
+        <!-- <div class="form-group">
+          <label>Email</label>
+          <input required [(ngModel)]="customer.name" name="name" type="text" class="form-control">
+          <div [hidden]="cForm.controls.name?.valid || cForm.controls.name?.pristine " class="error-message">
+            Email is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Address</label>
+          <input required [(ngModel)]="customer.name" name="name" type="text" class="form-control">
+          <div [hidden]="cForm.controls.name?.valid || cForm.controls.name?.pristine " class="error-message">
+            Address is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <input required [(ngModel)]="customer.name" name="name" type="number" class="form-control">
+          <div [hidden]="cForm.controls.name?.valid || cForm.controls.name?.pristine " class="error-message">
+            Rating is required.
+          </div>
+        </div> -->
+        <button class="btn btn-primary btn-block">
+          <i class="fa fa-save"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
