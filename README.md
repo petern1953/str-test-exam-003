@@ -6,12 +6,12 @@ const customerFilter = (list, name, rating) => {
         .map( c => c.name );
 };
 ### task02-dom
-function changeElements() {
-    document.querySelectorAll('.example').forEach( e => {
-        e.style.backgroundColor = 'red';
-        e.style.fontStyle = 'italic';
-    });
-}
+/ function changeElements() {
+/    document.querySelectorAll('.example').forEach( e => {
+/        e.style.backgroundColor = 'red';
+/        e.style.fontStyle = 'italic';
+/    });
+/}
 ## Angular
 - model: customer, service: nettuts
 - Observable, CRUD, app-routing.module: simplest routing,
