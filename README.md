@@ -17,5 +17,5 @@ model: customer, service: nettuts
 Observable, CRUD, app-routing.module: simplest routing,
 app.component: <router-outlet></router-outlet>
 ### page: 
-home (list page) -- routerLink (save button), onDelete() (delete button)
-create (edit page) -- ngSubmit, onCreate() (+ button)
+- home (list page) -- routerLink (save button), onDelete() (delete button)
+- create (edit page) -- ngSubmit, onCreate() (+ button)
